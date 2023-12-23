@@ -3,6 +3,10 @@
 		{
 			"name": "231223-073353-megaatmega2560",
 			"path": ".."
+		},
+		{
+			"name": "espidf",
+			"path": "../../espidf"
 		}
 	],
 	"settings": {

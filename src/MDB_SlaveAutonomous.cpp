@@ -261,7 +261,11 @@ void transactionHandler(void)
     CSH_SetDeviceState(CSH_S_SESSION_IDLE);
     Debug.println(F("Vend Approved"));
 }
-
+/*
+ * Handler for two Cashless Device active states:
+ * ENABLED -- device is waiting for a new card
+ * VEND    -- device is busy making transactions with the server
+ */
 void sessionHandler(void)
 {
     switch (CSH_GetDeviceState())
@@ -320,8 +324,4 @@ void loop()
     //    }
 }
 
-/*
- * Handler for two Cashless Device active states:
- * ENABLED -- device is waiting for a new card
- * VEND    -- device is busy making transactions with the server
- */
+
